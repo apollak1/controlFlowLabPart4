@@ -2,7 +2,7 @@
 import Foundation
 
 //CONTROL FLOW LAB PART 4 - SWITCH STATEMENTS
- //version 10/19/22
+ //version 10/24/22
 
 print("PROBLEM 4 Fundamentals:")
 /*
@@ -27,7 +27,7 @@ print("PROBLEM 4 Fundamentals:")
  */
 print("\n")
 
-print("SWITCH STATEMENT EXAMPLE 1")
+print("SWITCH STATEMENT EXAMPLE FOR 4.0")
 
 //Observe how the switch statement is constructed and used below. In this example someCharacter is a String in the form of a Character (don't worry about that). It just shows you how to use alphabetical or textual words. You will be using numbers (1,2,3) or ranges (0-5, 6-10, 11-20) for this lab.
 //Notice that a variable or constant is declared first
@@ -50,20 +50,10 @@ default:
 print("\n")
 
 
-print("*** PROBLEM 2.0: BASEBALL WINNERS POSITION")
+print("*** PROBLEM 4.0: BASEBALL WINNERS POSITION")
 // Imagine you're on a baseball team nearing the end of the season. Create a leaguePosition constant with a value of 1. Using a switch statement, print "Champions!" if the leaguePosition is 1 (case 1), "Runners up" if the value is 2 (case 2), "Third place" if the value is 3 (case 3), and "Bad season!" in all other cases.
     
-let leaguePosition = 1
-switch leaguePosition {
-case 1:
-    print("Champions!")
-case 2:
-    print("Runners up")
-case 3:
-    print("Third place")
-default:
-    print("Bad season!")
-}
+
 //Test your code by changing leaguePosition values and observe the results.
 
 //Now format the code above. How? Select the code (highlight) and use CONTROL-I. It usually corrects it to the
@@ -71,25 +61,17 @@ default:
 print("\n")
 
 
-print("*** PROBLEM 2.1: MEDAL WINNERS")
+print("*** PROBLEM 4.1: MEDAL WINNERS")
     
     
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3 (case 1, case 2, case 3). Otherwise, print "No medal awarded" (default).
     
-    switch leaguePosition {
-    case 1:
-        print("Medal winner!")
-    case 2:
-        print("Medal winner")
-    case 3:
-        print("Medal winner")
-    default:
-        print("No medal awarded")
-    }
+    
+//Be sure test each case code by changing leaguePosition values
 
 print("\n")
 
-print("SWITCH STATEMENT EXAMPLE 2: AGE RANGES")
+print("SWITCH STATEMENT EXAMPLE FOR 4.2: AGE RANGES")
 //This examples shows a SWITCH STATEMENT use
 
 //Notice using the three periods gives you an interval of cases inclusively.
@@ -110,9 +92,10 @@ default:
     print("Forget about him!")
 }
 
+//Be sure to test each case by changing the problemKid values.
 
 print("\n")
-print("*** PROBLEM 2.2: HEART RANGE STATEMENTS")
+print("*** PROBLEM 4.2: HEART RANGE STATEMENTS")
 /*
  If you completed the Target Heart Rate exercise, you showed different statements to the user based on whether or not the user's heart rate was inside of a target zone. Now you decide to just tell them what zone they are in rather than tell them what zone to be in.
  Write a switch statement that will print different statements based on what range currentHR falls into. Below is a list of ranges and the associated statements
@@ -126,20 +109,3 @@ print("*** PROBLEM 2.2: HEART RANGE STATEMENTS")
  */
 
 //First declare a constant currentHR and for now give it a value of 128.
-let myCurrentHR = 100
-switch myCurrentHR {
-case 100...120:
-    print("You are in the Very Light zone. Activity in this zone helps with recovery.")
-case 121...140:
-    print("You are in the Light zone. Activity in this zone helps improve basice endurance and fat burning.")
-case 141...160:
-    print("You are in the Moderate zone. Activity in this zone helps improve aerobic fitness.")
-case 161...180:
-    print("You are in the Hard zone. Activity in this zone increases maximum performance capacity for shorter sessions.")
-case 181...200:
-    print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
-default:
-    print("Woah! Slow down or find a good cardiologist")
-}
-        
-    
